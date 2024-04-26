@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <title>Chef's Escape</title>
+</head>
+<body>
+
+    <div id='canvas'>
+        <canvas width="1000" height="500"></canvas>
+
+        <div id="game-intro">
+          <div class='intro'>
+            <div class='game-play'> 
+            </div>
+          </div>
+          <div class="directions">
+              <br><b>Chef's Escape</b>: You gotta help Finny dodge those hungry forks and frying pans dead set on making him tonight's meal just using ⬆︎ key!</br>
+
+          </div>
+
+            <div id="start-button">
+              <div class="button_slide slide_left">I'm ready! </div>
+              <br /> <br /><br /></div>
+      </div>
+      <div id='level'>
+        <img id = "level-cloud" src='images/levelComplete.png'>
+        <button id="level-button"><b>NEXT</b></button>  
+      </div>
+  
+      <div id='gameover'>
+        <img id="gameover-cloud" src='images/gameOver.png'>
+        <button id="gameover-button"><b>TRY AGAIN</b></button>  
+      </div>
+  
+      <div id='win-game'>
+        <img id="win-game-cloud" src='images/winGame.gif'>
+        <button id="restart-button"><b>PLAY AGAIN</b></button>  
+      </div>
+    </div>
+    <script type="text/javascript" src="sounds.js"></script>
+
+  <script type="text/javascript" src="score.js"></script>
+  <script type="text/javascript" src="groundObstacles.js"></script>
+  <script type="text/javascript" src="controls.js"></script>
+  <script type="text/javascript" src="player.js"></script>
+  <script type="text/javascript" src="background.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
